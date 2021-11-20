@@ -1,4 +1,9 @@
-import { faCode, faDiceTwo, faHome } from '@fortawesome/free-solid-svg-icons';
+import {
+  faCamera,
+  faCode,
+  faDiceTwo,
+  faHome,
+} from '@fortawesome/free-solid-svg-icons';
 import { keyframes } from '@stitches/react';
 import { useRouter } from 'next/dist/client/router';
 import { styled } from '../stitches.config';
@@ -57,7 +62,7 @@ export default function Dock() {
   return (
     <StyledDock bottom={{ '@initial': 1, '@bp2': 2 }}>
       <DockLink href="/" icon={faHome} isActive={isActive('/')} />
-      <DockLink href="/toka" icon={faDiceTwo} isActive={isActive('/toka')} />
+      <DockLink href="/toka" icon={faCamera} isActive={isActive('/toka')} />
       <Separator />
       <DockLink type="github" />
     </StyledDock>

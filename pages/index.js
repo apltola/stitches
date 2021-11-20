@@ -3,7 +3,9 @@ import StitchesLogo from '../components/StitchesLogo';
 import Card from '../components/Card';
 import Page from '../components/Page';
 
-const Text = styled('p', {});
+const Text = styled('p', {
+  fontFamily: 'Walsheim',
+});
 
 const Link = styled('a', {
   textDecoration: 'none',
@@ -35,14 +37,14 @@ export default function Home() {
         <Link href="https://stitches.dev">stitches.dev</Link>.
       </Text>
       <Grid css={{ marginTop: '2rem' }}>
-        <Card>card card </Card>
-        <Card>card card </Card>
-        <Card>card card </Card>
-        <Card>card card </Card>
-        <Card>card card </Card>
-        <Card>card card </Card>
-        <Card>card card </Card>
-        <Card>card card </Card>
+        <Card>card card card card</Card>
+        <Card>card card card card</Card>
+        <Card>card card card card</Card>
+        <Card>card card card card</Card>
+        <Card>card card card card</Card>
+        <Card>card card card card</Card>
+        <Card>card card card card</Card>
+        <Card>card card card card</Card>
       </Grid>
     </Page>
   );

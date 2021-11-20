@@ -14,10 +14,16 @@ const StyledHeader = styled('header', {
   zIndex: 10,
 });
 
+const Brand = styled('h1', {
+  fontFamily: 'Walsheim',
+  fontWeight: 800,
+  fontSize: 'x-large',
+});
+
 export default function Header() {
   return (
     <StyledHeader>
-      <h2>Saitti</h2>
+      <Brand>Saitti</Brand>
     </StyledHeader>
   );
 }

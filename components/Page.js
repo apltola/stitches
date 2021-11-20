@@ -16,11 +16,18 @@ const Container = styled('div', {
   minHeight: 'calc(100vh - 4rem)',
   maxWidth: 1224,
   margin: 'auto',
-  padding: '$6',
-  paddingBottom: '120px',
   animation: `${drop} 200ms ease`,
+
+  variants: {
+    padding: {
+      1: { padding: '$6 $3 120px $3' },
+      2: { padding: '$6 $6 120px $6' },
+    },
+  },
 });
 
 export default function Page({ children }) {
-  return <Container>{children}</Container>;
+  return (
+    <Container padding={{ '@initial': 1, '@bp1': 2 }}>{children}</Container>
+  );
 }

@@ -19,9 +19,39 @@ export const globalStyles = globalCss({
     cursor: 'pointer',
     color: 'inherit',
   },
-  h1: { margin: 0 },
-  h2: { margin: 0 },
-  h3: { margin: 0 },
+  h1: { margin: 0, fontWeight: 600 },
+  h2: { margin: 0, fontWeight: 600 },
+  h3: { margin: 0, fontWeight: 600 },
+  '@font-face': [
+    {
+      fontFamily: 'Walsheim',
+      fontWeight: 500,
+      fontStyle: 'normal',
+      fontDisplay: 'fallback',
+      src: 'url("/static/fonts/GT-Walsheim-Regular.woff2")',
+    },
+    {
+      fontFamily: 'Walsheim',
+      fontWeight: 600,
+      fontStyle: 'normal',
+      fontDisplay: 'fallback',
+      src: 'url("/static/fonts/GT-Walsheim-Medium.woff2")',
+    },
+    {
+      fontFamily: 'Walsheim',
+      fontWeight: 700,
+      fontStyle: 'normal',
+      fontDisplay: 'fallback',
+      src: 'url("/static/fonts/GT-Walsheim-Bold.woff2")',
+    },
+    {
+      fontFamily: 'Walsheim',
+      fontWeight: 800,
+      fontStyle: 'normal',
+      fontDisplay: 'fallback',
+      src: 'url("/static/fonts/GT-Walsheim-Black.woff2")',
+    },
+  ],
 });
 
 export const { config, createTheme, css, getCssText, styled, theme } =
